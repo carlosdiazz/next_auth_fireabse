@@ -56,6 +56,7 @@ export default function DashboardPage() {
 
   const refreshToken = async () => {
     const newToken = await getToken()
+    console.log(newToken);
     setToken(newToken)
   }
 
